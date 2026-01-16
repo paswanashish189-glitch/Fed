@@ -1,0 +1,140 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>employment application</title>
+</head>
+<body>
+     <h1> Employment application Form </h1>
+     <p><body>
+        <form>
+          <!-- Personal Information -->
+          <fieldset>
+            <legend>Personal Information</legend>
+            <label>Title:
+              <select required>
+                <option value="">Please select</option>
+                <option>Mr</option>
+                <option>Ms</option>
+                <option>Mrs</option>
+                <option>Dr</option>
+              </select>
+            </label>
+            <label>First Name*: <input type="text" required></label>
+            <label>Last Name*: <input type="text" required></label>
+            <label>Email Address*: <input type="email" required></label>
+            <label>Phone Number*: <input type="tel" placeholder="123-456-7890" required></label>
+            <label>Date of Birth*: <input type="date" required></label>
+            <label>Address*: <textarea required></textarea></label>
+          </fieldset>
+
+          <!-- Employment Details -->
+          <fieldset>
+            <legend>Employment Details</legend>
+            <label>Desired Position*:
+              <select required>
+                <option value="">Please select</option>
+                <option>Software Engineer</option>
+                <option>Data Analyst</option>
+                <option>Manager</option>
+              </select>
+            </label>
+            <label>Expected Salary ($): <input type="number"></label>
+            <label>Available Start Date*: <input type="date" required></label>
+            <div class="radio-group">
+              Employment Type*:
+              <label><input type="radio" name="type" required> Full-time</label>
+              <label><input type="radio" name="type"> Part-time</label>
+              <label><input type="radio" name="type"> Contract</label>
+            </div>
+            <div class="checkbox-group">
+              Remote Work Options:
+              <label><input type="checkbox"> Open to remote work</label>
+              <label><input type="checkbox"> Interested in hybrid model</label>
+            </div>
+          </fieldset>
+
+          <!-- Education History -->
+          <fieldset>
+            <legend>Education History</legend>
+            <table>
+              <tr><th>Institution</th><th>Degree</th><th>Field of Study</th><th>Graduation Year</th></tr>
+              <tr>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="number"></td>
+              </tr>
+            </table>
+          </fieldset>
+
+          <!-- Work Experience -->
+          <fieldset>
+            <legend>Work Experience</legend>
+            <table>
+              <tr><th>Company</th><th>Position</th><th>Start Date</th><th>End Date</th><th>Responsibilities</th></tr>
+              <tr>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="date"></td>
+                <td><input type="date"></td>
+                <td><textarea></textarea></td>
+              </tr>
+            </table>
+          </fieldset>
+
+          <!-- Skills Assessment -->
+          <fieldset class="skills">
+            <legend>Skills Assessment</legend>
+            <label>Communication: <input type="range" min="1" max="5"></label>
+            <label>Leadership: <input type="range" min="1" max="5"></label>
+            <label>Technical Ability: <input type="range" min="1" max="5"></label>
+            <label>Additional Skills: <textarea placeholder="List any other relevant skills"></textarea></label>
+          </fieldset>
+
+          <!-- Documents -->
+          <fieldset>
+            <legend>Documents</legend>
+            <label>Upload Resume (PDF/DOCX)*: <input type="file" accept=".pdf,.doc,.docx" required></label>
+            <label>Cover Letter (optional): <input type="file" accept=".pdf,.doc,.docx"></label>
+            <label>Portfolio Link: <input type="url" placeholder="https://"></label>
+          </fieldset>
+
+          <!-- References -->
+          <fieldset>
+            <legend>References</legend>
+            <table>
+              <tr><th>Name</th><th>Position</th><th>Company</th><th>Email</th><th>Phone</th></tr>
+              <tr>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="email"></td>
+                <td><input type="tel" placeholder="123-456-7890"></td>
+              </tr>
+            </table>
+          </fieldset>
+
+          <!-- Terms and Conditions -->
+          <fieldset>
+            <legend>Terms and Conditions</legend>
+            <label><input type="checkbox" required> I hereby declare that the information provided is true and accurate to the best of my knowledge. *</label>
+            <label><input type="checkbox" required> I agree to the processing of my personal data for recruitment. *</label>
+            <label><input type="checkbox"> I would like to receive notifications about future job opportunities.</label>
+          </fieldset>
+
+          <!-- Buttons -->
+          <div class="buttons">
+            <button type="submit" class="submit">Submit Application</button>
+            <button type="reset" class="clear">Clear Form</button>
+          </div>
+        </form>
+      </body>
+      </html>
+
+
+      </p>
+
+</body>
+</html>
